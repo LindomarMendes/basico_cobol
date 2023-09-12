@@ -1,0 +1,24 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. hello.
+       DATA DIVISION.
+          WORKING-STORAGE SECTION.
+          01 WRK-DATA.
+            02 WRK-ANO PIC 9(04) values zeros.
+            02 WRK-MES PIC 9(02) values zeros.
+            02 WRK-DIA PIC 9(02) values zeros.
+            
+            77 X PIC 99.
+            77 MinhaString PIC X(50).
+            
+            01 Result PIC 9(5).
+      **** o comentario deve se iniciar na coluna 7 de cada linha
+       PROCEDURE DIVISION.
+      *    MOVE 11 TO  X
+      *    MOVE "Exemplo de valor para MinhaString" TO MinhaString.
+      *    DISPLAY X
+           ACCEPT WRK-DATA FROM DATE YYYYMMDD.
+           DISPLAY 'Data.:'  WRK-DIA ' do ' WRK-MES ' De ' WRK-ANO.
+           GOBACK
+       STOP RUN.
+       
+       
