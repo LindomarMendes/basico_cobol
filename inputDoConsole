@@ -1,0 +1,12 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. hello.
+       DATA DIVISION.
+          WORKING-STORAGE SECTION.
+            77 X PIC 99.
+            77 MinhaString PIC X(50).
+       PROCEDURE DIVISION.
+           ACCEPT MinhaString FROM CONSOLE. 
+           DISPLAY "Você digitou .: " MinhaString
+           
+           GOBACK
+       STOP RUN.
