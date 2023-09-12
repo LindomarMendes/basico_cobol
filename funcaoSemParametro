@@ -1,0 +1,26 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. hello.
+       DATA DIVISION.
+          WORKING-STORAGE SECTION.
+          01 Result PIC 9(2).
+          
+          
+          
+       PROCEDURE DIVISION.
+      
+       MOVE 0 TO Result
+    
+       DISPLAY "Resultado da Função: " Result
+    
+       PERFORM Calculate-Sum
+       
+       DISPLAY "Resultado da Função: " Result
+       
+       STOP RUN.
+       
+       
+       Calculate-Sum.
+       ADD 10 TO Result
+       EXIT.
+       
+       
