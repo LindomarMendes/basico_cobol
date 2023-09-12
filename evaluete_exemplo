@@ -1,0 +1,23 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. hello.
+       DATA DIVISION.
+          WORKING-STORAGE SECTION.
+          
+          01 X   PIC 9(5) VALUE 1.
+        
+       PROCEDURE DIVISION.
+      
+        EVALUATE X
+        WHEN 1
+            DISPLAY "X é igual a 1"
+        WHEN 2
+            DISPLAY "X é igual a 2"
+        WHEN OTHER
+            DISPLAY "X não é nem 1 nem 2"
+        END-EVALUATE.
+       STOP RUN.
+       
+       
+       
+       
+       
